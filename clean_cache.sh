@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the log file in your home directory
-LOG_FILE="$HOME/clear_cache.log"
+LOG_FILE="$HOME/cron_job.log"
 
 # Function to log messages
 log() {

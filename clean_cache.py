@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
+
 import os
 import datetime
 
 # Path to the log file
-LOG_FILE = os.path.expanduser("~/clear_cache.log")
+LOG_FILE = os.path.expanduser("~/cron_job.log")
 
 # Function to log messages
 def log(message):

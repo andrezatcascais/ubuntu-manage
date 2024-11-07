@@ -40,13 +40,13 @@ This repository contains two scripts (one in Python and one in Bash) that automa
 #### Make the script executable
 
 ```bash
-chmod +x clean_cache.sh
+chmod u+x clean_cache.sh
 ```
 
 #### Run the script
 
 ```bash
-sudo ./clean_cache.sh
+./clean_cache.sh
 ```
 
 ### Python Script (`clean_cache.py`)
@@ -60,10 +60,16 @@ sudo apt update
 sudo apt install python3
 ```
 
-#### Run the Python script with superuser privileges
+#### Make the script executable
 
 ```bash
-sudo python3 clean_cache.py
+chmod u+x clean_cache.py
+```
+
+#### Run the Python script
+
+```bash
+python3 clean_cache.py
 ```
 
 ## Logs
@@ -119,6 +125,8 @@ example:
 ![alt text](assets/image-1.png)
 
 Make sure to replace /path/to/ with the actual path where the script is located.
+
+> [More information about debugging cron jobs](/CronJob-debugging-guide.md)
 
 #### Note
 
