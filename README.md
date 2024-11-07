@@ -1,3 +1,10 @@
+# Overview
+
+## Need and Solution
+
+I created this automation using AI to solve a recurring issue on my Ubuntu system. I was frequently prompted to clear the RAM cache, which required manual terminal commands. To streamline this process and save time, I decided to automate it. Using a generative AI tool, I developed a custom script and received additional recommendations, such as scheduling daily execution via cron and generating a log file to verify that the task completes as scheduled each day.
+
+
 # Clear Cache and Swap Automation Scripts
 
 This repository contains two scripts (one in Python and one in Bash) that automate the process of clearing the system's RAM cache, buffers, and SWAP memory on a Linux system. These scripts log their actions to a log file for easy review.
