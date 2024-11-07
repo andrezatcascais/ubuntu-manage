@@ -55,7 +55,7 @@ This should return the path to the Python executable, which should match the one
 Ensure that the script has the correct permissions to be executed, as mentioned before:
 
 ```bash
-chmod u+x /home/andreza/automatization_scripts/ubuntu-manage/clean_cache.py
+chmod u+x /home/your-user/path-your-file/clean_cache.py
 ```
 
 Also, if the script requires `sudo` permissions to run certain commands (such as clearing caches or disabling swap), make sure you have configured cron to run as root or have set the appropriate permissions for the user.
@@ -67,7 +67,7 @@ Also, if the script requires `sudo` permissions to run certain commands (such as
 Cron runs in a more restricted environment than an interactive shell. Make sure your script doesn't depend on environment variables that aren't set in the cron environment. You can explicitly add environment variables within the crontab, like this:
 
 ```plaintext
-25 13 * * * export PATH=$PATH:/usr/bin && /usr/bin/python3 /home/andreza/automatization_scripts/ubuntu-manage/clean_cache.py
+25 13 * * * export PATH=$PATH:/usr/bin && /usr/bin/python3 /home/your-user/path-your-file/clean_cache.py
 ```
 
 This ensures that cron has the correct path for the Python executable and any other necessary commands.
@@ -79,7 +79,7 @@ This ensures that cron has the correct path for the Python executable and any ot
 Try running the cron job manually in the terminal with the exact command from your crontab to check if it works correctly:
 
 ```bash
-/usr/bin/python3 /home/andreza/automatization_scripts/ubuntu-manage/clean_cache.py
+/usr/bin/python3 /home/your-user/path-your-file/clean_cache.py
 ```
 
 If it works fine manually but not via cron, the issue might be related to the cron environment.
