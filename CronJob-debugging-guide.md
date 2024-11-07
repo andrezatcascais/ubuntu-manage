@@ -31,7 +31,7 @@ This will show all cron execution attempts. If the cron job failed, you'll see a
 To help with debugging, add output redirection (both `stdout` and `stderr`) to a log file. This will capture any errors or messages cron is generating. Modify your cron job like this:
 
 ```plaintext
-25 13 * * * /usr/bin/python3 /home/andreza/automatization_scripts/ubuntu-manage/clean_cache.py >> /home/andreza/automatization_scripts/cron_job.log 2>&1
+25 13 * * * /usr/bin/python3 /home/your-user/path-your-file/clean_cache.py >> /home/your-user/path-your-file//cron_job.log 2>&1
 ```
 
 This will cause cron to capture all output (both normal and errors) and save it in `/home/your-user/cron_job.log`. After the scheduled time, you can check this file to see what happened.
